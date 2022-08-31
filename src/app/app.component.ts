@@ -12,7 +12,7 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Benify kanban board';
+  title = 'Kanban board';
   boardColumns: BoardColumns = {
     todo: { tasks: [], title: 'To do' },
     impl: { tasks: [], title: 'Implementing' },
