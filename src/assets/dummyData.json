@@ -1,0 +1,5 @@
+{
+  "todo": ["Add data storage functionality", "Add drag-n-drop functionality", "Implement CRUD operations for tasks"],
+  "impl": ["Create git repository for the project"],
+  "done": ["Create new angular project", "Add UI library to the project", "Create first page and set title"]
+}

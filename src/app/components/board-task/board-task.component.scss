@@ -1,0 +1,26 @@
+.board-task {
+  cursor: move;
+  padding: 10px;
+  margin: 10px 0px !important;
+    background-color: rgb(200, 200, 200);
+}
+
+.board-task-title {
+  margin-bottom: 0;
+  text-align: right;
+  border-radius: 5px 5px 0px 0px;
+  background-color: rgb(180, 180, 100);
+  min-height: 30px;
+}
+
+.board-task-content {
+  padding: 5px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: rgb(230, 230, 30);
+  min-height: 50px;
+  font-size: 16px;
+}
+
+.board-task-button {
+  transform: scale(0.6);
+}

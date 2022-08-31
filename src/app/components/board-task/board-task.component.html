@@ -1,0 +1,11 @@
+<mat-card class="board-task" style="margin: 0;">
+  <mat-card-title class="board-task-title">
+      <button mat-mini-fab color="primary" aria-label="Edit task" class="board-task-button" (click)="changeTask.emit({task:task, operation: 'edit'})">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-mini-fab color="warn" aria-label="Delete task" class="board-task-button" (click)="changeTask.emit({task:task, operation: 'delete'})">
+        <mat-icon>delete</mat-icon>
+      </button>
+  </mat-card-title>
+  <mat-card-content class="board-task-content">{{task}}</mat-card-content>
+</mat-card>

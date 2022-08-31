@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Add new task</h1>
+<div mat-dialog-content style="padding: 0; margin: 0;">
+  <mat-form-field appearance="fill" style="width: 100%;">
+    <mat-label>Write task here:</mat-label>
+    <input matInput [(ngModel)]="task" maxlength="100" placeholder="Task details here">
+    <mat-hint [align]="'end'">{{task ? task.length : 0}} / 100</mat-hint>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="task" [disabled]="!task || task.length === 0">Add</button>
+</div>

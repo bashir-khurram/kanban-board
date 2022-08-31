@@ -1,0 +1,8 @@
+<mat-card class="board-column">
+  <mat-card-title class="board-column-title">{{columnData.title}}</mat-card-title>
+  <mat-card-content class="board-content" *ngIf="columnData.tasks && columnData.tasks.length > 0">
+    <ng-container *ngFor="let task of columnData.tasks">
+      <app-board-task cdkDrag [task]="task" (changeTask)="updateTask($event)"></app-board-task>
+    </ng-container>
+  </mat-card-content>
+</mat-card>
