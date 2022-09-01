@@ -1,12 +1,12 @@
 <mat-toolbar class="header">
   <h1 class="title">{{title}}</h1>
   <div style="flex: 1 1 auto;"></div>
-  <button mat-fab color="primary" aria-label="Add new task" (click)="addTask()">
+  <button mat-mini-fab color="primary" aria-label="Add new task" (click)="addTask()">
     <mat-icon>add</mat-icon>
   </button>
 </mat-toolbar>
 
-<mat-grid-list cols="3" class="column-gridList" rowHeight="fit">
+<mat-grid-list cols="3" class="board-column-gridList" rowHeight="fit">
 
   <mat-grid-tile
     #todoGrid="cdkDropList"
@@ -18,7 +18,7 @@
       [columnData]="boardColumns.todo"
       (edit)="editTask($event, boardColumns.todo)"
       (delete)="deleteTask($event, boardColumns.todo)"
-      class="app-column"></app-board-column>
+      class="app-board-column"></app-board-column>
   </mat-grid-tile>
 
   <mat-grid-tile
@@ -31,7 +31,7 @@
       [columnData]="boardColumns.impl"
       (edit)="editTask($event, boardColumns.impl)"
       (delete)="deleteTask($event, boardColumns.impl)"
-      class="app-column"></app-board-column>
+      class="app-board-column"></app-board-column>
   </mat-grid-tile>
 
   <mat-grid-tile
@@ -44,6 +44,6 @@
       [columnData]="boardColumns.done"
       (edit)="editTask($event, boardColumns.done)"
       (delete)="deleteTask($event, boardColumns.done)"
-      class="app-column"></app-board-column>
+      class="app-board-column"></app-board-column>
   </mat-grid-tile>
 </mat-grid-list>

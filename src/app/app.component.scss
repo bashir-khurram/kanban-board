@@ -1,23 +1,15 @@
-@use "@angular/material" as mat;
-@include mat.core();
+$header-height: 60px;
 
-$header-height: 70px;
-
-.mat-toolbar {
+.header {
  height: $header-height;
 }
 
-.mat-grid-list {
+.board-column-gridList {
   height: calc(100% - $header-height);
 
 }
 
-.app-column {
+.app-board-column {
   height: 100% !important;
   width: 100% !important;
 }
-
-// .title {
-//   width: 100%;
-//   text-align: center;
-// }
