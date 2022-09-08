@@ -91,7 +91,6 @@ export class AppComponent implements OnInit {
   }
 
   drop(event: CdkDragDrop<string[]>) {
-    console.log(event);
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {
@@ -102,6 +101,7 @@ export class AppComponent implements OnInit {
         event.currentIndex,
       );
     }
+    LocalStorageUtils.set(BOARD_COLUMNS_KEY, this.boardColumns);
   }
 
 }
